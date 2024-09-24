@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Conciencia Climática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Conciencia sobre el Cambio Climático</h1>
+        <p>El cambio climático es una realidad que afecta a todo el planeta. Es momento de actuar.</p>
+    </header>
+
+    <section class="impact">
+        <h2>Impactos del Cambio Climático</h2>
+        <div class="impact-cards">
+            <div class="card">
+                <h3 onclick="toggleInfo('info1')">Aumento de temperaturas <span>⯆</span></h3>
+                <p>Las temperaturas globales han aumentado considerablemente.</p>
+                <div id="info1" class="extra-info">
+                    <p>Las olas de calor extremas están volviéndose más comunes. Este incremento en las temperaturas no solo afecta la salud humana, sino que también impacta negativamente en la agricultura, los ecosistemas y el suministro de agua potable.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 onclick="toggleInfo('info2')">Deshielo de los polos <span>⯆</span></h3>
+                <p>El deshielo acelerado en los polos está contribuyendo al aumento del nivel del mar.</p>
+                <div id="info2" class="extra-info">
+                    <p>El Ártico y la Antártida están perdiendo hielo a un ritmo sin precedentes. El aumento del nivel del mar amenaza ciudades costeras en todo el mundo.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 onclick="toggleInfo('info3')">Extinción de especies <span>⯆</span></h3>
+                <p>El cambio climático está provocando la extinción de especies a un ritmo alarmante.</p>
+                <div id="info3" class="extra-info">
+                    <p>La pérdida de hábitats, el calentamiento de los océanos y la alteración de los patrones de migración están llevando a muchas especies al borde de la extinción.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="actions">
+        <h2>¿Qué puedes hacer?</h2>
+        <ul>
+            <li onclick="toggleInfo('action1')">
+                Reducir tu huella de carbono usando transporte sostenible.
+                <div id="action1" class="extra-info">
+                    <p>Optar por caminar, usar la bicicleta, transporte público o vehículos eléctricos reduce significativamente la emisión de gases de efecto invernadero.</p>
+                </div>
+            </li>
+            <li onclick="toggleInfo('action2')">
+                Ahorrar energía en casa, utilizando bombillas de bajo consumo.
+                <div id="action2" class="extra-info">
+                    <p>La iluminación eficiente y el uso consciente de aparatos eléctricos pueden reducir el consumo de energía, disminuyendo la demanda de energía y las emisiones.</p>
+                </div>
+            </li>
+            <li onclick="toggleInfo('action3')">
+                Promover el uso de productos locales y sostenibles.
+                <div id="action3" class="extra-info">
+                    <p>Comprar productos locales y sostenibles reduce la huella de carbono asociada al transporte y apoya prácticas agrícolas ecológicas que protegen el medio ambiente.</p>
+                    <p>Te invitamos a visitar <a href="https://lasostenibleuruguay.com/" target="_blank">La Sostenible</a>, una tienda en Uruguay con productos ecológicos y libres de plásticos.</p>
+                </div>
+            </li>
+            <li onclick="toggleInfo('action4')">
+                Reciclar y reducir el consumo de plásticos.
+                <div id="action4" class="extra-info">
+                    <p>Reciclar y minimizar el uso de plásticos de un solo uso ayuda a reducir los residuos que terminan contaminando el medio ambiente, especialmente los océanos.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Actúa ahora para proteger nuestro planeta. Juntos podemos hacer la diferencia.</p>
+    </footer>
+
+    <script>
+        function toggleInfo(id) {
+            var element = document.getElementById(id);
+            element.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
