@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.impact, .actions {
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.impact h2, .actions h2 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.impact-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.extra-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+
+.extra-info p {
+    color: #555;
+}
+
+.extra-info.show {
+    max-height: 300px;
+    opacity: 1;
+}
+
+.actions ul {
+    list-style: none;
+    text-align: center;
+}
+
+.actions li {
+    background: #f1f1f1;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.actions li:hover {
+    background-color: #e0e0e0;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
